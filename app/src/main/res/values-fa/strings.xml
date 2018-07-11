@@ -29,6 +29,14 @@
 <string name="version">نسخه</string>
 <string name="coin">سکه</string>
     <string name="tapToBuy">برای خرید لمس کن</string>
+    <!--free themes-->
+    <string name="defaultTheme">پیش فرض</string>
+    <string name="greenTheme">سبز</string>
+    <!--premium themes-->
+    <string name="blueTheme">آبی</string>
+    <string name="redTheme">قرمز</string>
+    <string name="blackTheme">مشکی</string>
+    <string name="goldenTheme">طلایی</string>
 
 <!--free coins-->
 <string name="r500">۵۰۰ تومنی</string>

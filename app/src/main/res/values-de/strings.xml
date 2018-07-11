@@ -24,14 +24,22 @@
     <string name="total">GESAMT</string>
     <string name="unknown">UNBEKANNT</string>
     <string name="version">Version</string>
-    <string name="customize">die Einstellungen</string>
+    <string name="customize">Themen</string>
     <string name="about_menu_title">Über...</string>
     <string name="coin_animation">Münz Animation</string>
     <string name="instructions_tap_tv">Tippen, um Münze zu werfen</string>
     <string name="reset">Zurücksetzen</string>
     <string name="laguage">Deutsche</string>
-    <string name="coin">Coin</string>
+    <string name="coin">Münzen</string>
     <string name="tapToBuy">Zum Kaufen tippen (Nur im Iran)</string>
+    <!--free themes-->
+    <string name="defaultTheme">Standard</string>
+    <string name="greenTheme">Grün</string>
+    <!--premium themes-->
+    <string name="blueTheme">Blau</string>
+    <string name="redTheme">rot</string>
+    <string name="blackTheme">Schwarz</string>
+    <string name="goldenTheme">Golden</string>
 
     <!--free coins-->
     <string name="r500">5000 Rials</string>

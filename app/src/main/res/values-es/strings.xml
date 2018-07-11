@@ -23,7 +23,7 @@
     <string name="new_coins">Nuevas monedas disponibles</string>
     <string name="rate_app_text">Califica la aplicación en Google Play</string>
     <string name="reset">Reiniciar</string>
-    <string name="customize">ajustes</string>
+    <string name="customize">Temas</string>
     <string name="tails">CRUZ</string>
     <string name="time">TIEMPO</string>
     <string name="toast_coin_error">Moneda no encontrada - Reiniciando selección</string>
@@ -31,8 +31,16 @@
     <string name="unknown">DESCONOCIDO</string>
     <string name="version">versión</string>
     <string name="laguage">Español</string>
-    <string name="coin">Coin</string>
+    <string name="coin">Monedas</string>
     <string name="tapToBuy">Toca para comprar (solo en Irán)</string>
+    <!--free themes-->
+    <string name="defaultTheme">Defecto</string>
+    <string name="greenTheme">verde</string>
+    <!--premium themes-->
+    <string name="blueTheme">Azul</string>
+    <string name="redTheme">Rojo</string>
+    <string name="blackTheme">Negro</string>
+    <string name="goldenTheme">Dorado</string>
 
     <!--free coins-->
     <string name="r500">5000 Rials</string>

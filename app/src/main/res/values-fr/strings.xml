@@ -24,16 +24,24 @@
     <string name="new_coins">Nouvelles pièces disponibles</string>
     <string name="rate_app_text">Noter l\'app sur Google Play</string>
     <string name="reset">Reset</string>
-    <string name="customize">paramètres</string>
+    <string name="customize">thèmes</string>
     <string name="tails">ARRIÈRE</string>
     <string name="time">TEMPS</string>
     <string name="toast_coin_error">Pièce non trouvé - Réinitialisation de la sélection</string>
     <string name="total">TOTAL</string>
     <string name="unknown">INCONNU</string>
     <string name="version">version</string>
-    <string name="laguage">français</string>
-    <string name="coin">Coin</string>
+    <string name="laguage">Français</string>
+    <string name="coin">Pièces</string>
     <string name="tapToBuy">Appuyez pour acheter (Seulement en Iran)</string>
+    <!--free themes-->
+    <string name="defaultTheme">Défaut</string>
+    <string name="greenTheme">Vert</string>
+    <!--premium themes-->
+    <string name="blueTheme">Bleu</string>
+    <string name="redTheme">Rouge</string>
+    <string name="blackTheme">Noir</string>
+    <string name="goldenTheme">Golden</string>
 
     <!--free coins-->
     <string name="r500">5000 Rials</string>

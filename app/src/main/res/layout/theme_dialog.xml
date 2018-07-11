@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent" >
+    <LinearLayout android:padding="16dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--**************FREE Coins***************-->
+        <!--Default-->
+        <android.support.v7.widget.CardView
+
+            app:cardBackgroundColor="@color/white"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/relThemeDefault"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/b500"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp" />
+                            <ImageView
+                                android:src="@drawable/shadow"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        app:contentPadding="8dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="1dp"
+                        app:cardBackgroundColor="@color/light_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.example.admin.cointoss.MyTextView
+                            android:textColor="@color/gray"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:text="@string/defaultTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--Green-->
+        <android.support.v7.widget.CardView
+
+            app:cardBackgroundColor="@color/lime"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/relThemeGreen"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/b10"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp" />
+                            <ImageView
+                                android:src="@drawable/shadow"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        app:contentPadding="8dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="1dp"
+                        app:cardBackgroundColor="@color/green"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.example.admin.cointoss.MyTextView
+                            android:textColor="@color/white"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:text="@string/r200"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <!--**************Premium Coins***************-->
+        <!--Blue-->
+        <android.support.v7.widget.CardView
+
+            app:cardBackgroundColor="@color/aqua"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/relThemeBlue"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/b1"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp" />
+                            <ImageView
+                                android:src="@drawable/shadow"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        app:contentPadding="8dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="1dp"
+                        app:cardBackgroundColor="@color/myBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.example.admin.cointoss.MyTextView
+                            android:textColor="@color/white"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:text="@string/d1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/lockThemeBlue"
+                    android:background="@drawable/lock_card_bg"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/ic_lock"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                    <com.example.admin.cointoss.MyTextView
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/tapToBuy"
+                        android:textColor="@color/myBlue"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <!--Red-->
+        <android.support.v7.widget.CardView
+
+            app:cardBackgroundColor="@color/red"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/relThemeRed"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/b52"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp" />
+                            <ImageView
+                                android:src="@drawable/shadow"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        app:contentPadding="8dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="1dp"
+                        app:cardBackgroundColor="@color/heads"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.example.admin.cointoss.MyTextView
+                            android:textColor="@color/white"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:text="@string/r25"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/lockThemeRed"
+                    android:background="@drawable/lock_card_bg"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/ic_lock"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                    <com.example.admin.cointoss.MyTextView
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/tapToBuy"
+                        android:textColor="@color/myBlue"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <!--Black-->
+        <android.support.v7.widget.CardView
+
+            app:cardBackgroundColor="@color/black"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/relThemeBlack"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/b200"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp" />
+                            <ImageView
+                                android:src="@drawable/shadow"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        app:contentPadding="8dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="1dp"
+                        app:cardBackgroundColor="@color/dark_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.example.admin.cointoss.MyTextView
+                            android:textColor="@color/white"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:text="@string/r10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/lockThemeBlack"
+                    android:background="@drawable/lock_card_bg"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/ic_lock"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                    <com.example.admin.cointoss.MyTextView
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/tapToBuy"
+                        android:textColor="@color/myBlue"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <!--Golden-->
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/golden"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/relThemeGolden"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/db1"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp" />
+                            <ImageView
+                                android:src="@drawable/shadow"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        app:contentPadding="8dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="1dp"
+                        app:cardBackgroundColor="@color/golden2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.example.admin.cointoss.MyTextView
+                            android:textColor="@color/white"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:text="@string/r5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/lockThemeGolden"
+                    android:background="@drawable/lock_card_bg"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/ic_lock"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                    <com.example.admin.cointoss.MyTextView
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/tapToBuy"
+                        android:textColor="@color/myBlue"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</HorizontalScrollView>

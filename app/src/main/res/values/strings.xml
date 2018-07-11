@@ -24,7 +24,7 @@
     <string name="new_coins">Sweet! New coins available!</string>
     <string name="rate_app_text">Rate App on Google Play</string>
     <string name="reset">Reset</string>
-    <string name="customize">Settings</string>
+    <string name="customize">Themes</string>
     <string name="tails">TAILS</string>
     <string name="time">TIME</string>
     <string name="toast_coin_error">Coin Not Found - Resetting Selection</string>
@@ -32,19 +32,26 @@
     <string name="unknown">UNKNOWN</string>
     <string name="version">version</string>
     <string name="laguage">English</string>
-    <string name="coin">Coin</string>
+    <string name="coin">Coins</string>
     <string name="tapToBuy">Tap to buy (Only in Iran)</string>
+    <!--free themes-->
+    <string name="defaultTheme">Default</string>
+    <string name="greenTheme">Green</string>
+    <!--premium themes-->
+    <string name="blueTheme">Blue</string>
+    <string name="redTheme">Red</string>
+    <string name="blackTheme">Black</string>
+    <string name="goldenTheme">Golden</string>
 
     <!--free coins-->
     <string name="r500">5000 Rials</string>
     <string name="r200">2000 Rials</string>
     <string name="r100">1000 Rials</string>
     <string name="r50">500 Rials</string>
-    <!--premium 1 coins-->
+    <!--premium coins-->
     <string name="r25">250 Rials</string>
     <string name="r10">100 Rials</string>
     <string name="r5">50 Rials</string>
-    <!--premium 2 coins-->
     <string name="r52">50 Rials</string>
     <string name="r2">2 Rials</string>
     <string name="r1">1 Rial</string>

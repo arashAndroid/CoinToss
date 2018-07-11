@@ -79,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
 
     private MyTextView txtCoin;
 
+    private MyTextView txtCustomize;
+
     private ImageButton statsResetButton;
 
     private LinearLayout statsLayout;
@@ -167,6 +169,14 @@ public class MainActivity extends AppCompatActivity {
                 CoinDialog coinDialog = new CoinDialog(MainActivity.this);
                 coinDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 coinDialog.show();
+            }
+        });
+        txtCustomize.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ThemeDialog themeDialog = new ThemeDialog(MainActivity.this);
+                themeDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                themeDialog.show();
             }
         });
 
@@ -470,6 +480,7 @@ public class MainActivity extends AppCompatActivity {
         headsStatText = (TextView) findViewById(R.id.heads_stat_text_view);
         tailsStatText = (TextView) findViewById(R.id.tails_stat_text_view);
         txtLanguage = (MyTextView) findViewById(R.id.txtLanguage);
+        txtCustomize = (MyTextView) findViewById(R.id.txtCustomize);
         txtCoin = (MyTextView) findViewById(R.id.txtCoin);
         statsResetButton = (ImageButton) findViewById(R.id.stats_reset_button);
         statsLayout = (LinearLayout) findViewById(R.id.statistics_layout);
