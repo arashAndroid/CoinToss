@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:clickable="true"
+    android:orientation="vertical">
+    <com.example.admin.cointoss.MyTextView
+        android:id="@+id/txtCustomize"
+        android:paddingRight="8dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@drawable/ic_settings"
+        android:text="@string/customize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.example.admin.cointoss.MyTextView
+        android:id="@+id/txtLanguage"
+        android:paddingLeft="8dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:drawableRight="@drawable/ic_language"
+        android:text="@string/laguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.example.admin.cointoss.MyTextView
+        android:id="@+id/txtCoin"
+        android:paddingLeft="8dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/ic_coin"
+        android:text="@string/coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.CardView
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/coin_image_view"
+                android:contentDescription="@string/coin_animation"
+                android:maxWidth="390dp"
+                android:maxHeight="390dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/unknown"
+                android:scaleType="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <com.example.admin.cointoss.MyTextView
+                android:id="@+id/result_text_view"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <android.support.v7.widget.CardView
+                card_view:cardBackgroundColor="@color/light_gray"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/statistics_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" android:layout_gravity="center">
+
+                    <com.example.admin.cointoss.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="8dp"
+                        android:text="@string/heads"
+                        android:textColor="@color/heads"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                    <TextView
+                        android:id="@+id/heads_stat_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="24dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                    <com.example.admin.cointoss.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="8dp"
+                        android:text="@string/tails"
+                        android:textColor="@color/tails"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                    <TextView
+                        android:id="@+id/tails_stat_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="24dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                    <ImageButton
+                        android:id="@+id/stats_reset_button"
+                        style="?android:attr/buttonStyleSmall"
+                        android:src="@drawable/ic_refresh"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

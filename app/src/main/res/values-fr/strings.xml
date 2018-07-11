@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_activity_title">À propos de Coin Flip</string>
+    <string name="about_menu_title">À propos</string>
+    <string name="about_text">
+        Un moyen simple de de retoruner une pièce, même si vous n\'en avez pas une. 
+        Tapotez simplement sur le point d\'interrogation ou secouez et regardez le résultat.
+        Tapotez ou secouez pour retourner à nouveau la pièce.
+        \n\n\nDes images de quart de dollar coin images de United States Mint.
+        Images de 1$ présidentiel de United States Mint.
+        \n\n\nCopyright © 2016 - Richard Banasiak
+        \nContributions open-source contributions de Alex Baker, Ciaran Gultnieks, Spanti Nicola 
+        &amp; Michael Riepen.
+    </string>
+    <string name="app_name">Coin Flip</string>
+    <string name="coin_animation">Animation de la pièce</string>
+    <string name="exit">Quitter</string>
+    <string name="instructions_tap_shake_tv">Tapotez/Secouez pour retourner la pièce</string>
+    <string name="instructions_tap_tv">Tapotez pour retourner la pièce</string>
+    <string name="heads">AVANT</string>
+    <string name="max">MAX</string>
+    <string name="milliseconds">ms</string>
+    <string name="min">OFF</string>
+    <string name="new_coins">Nouvelles pièces disponibles</string>
+    <string name="rate_app_text">Noter l\'app sur Google Play</string>
+    <string name="reset">Reset</string>
+    <string name="customize">paramètres</string>
+    <string name="tails">ARRIÈRE</string>
+    <string name="time">TEMPS</string>
+    <string name="toast_coin_error">Pièce non trouvé - Réinitialisation de la sélection</string>
+    <string name="total">TOTAL</string>
+    <string name="unknown">INCONNU</string>
+    <string name="version">version</string>
+    <string name="laguage">français</string>
+    <string name="coin">Coin</string>
+    <string name="tapToBuy">Appuyez pour acheter (Seulement en Iran)</string>
+
+    <!--free coins-->
+    <string name="r500">5000 Rials</string>
+    <string name="r200">2000 Rials</string>
+    <string name="r100">1000 Rials</string>
+    <string name="r50">500 Rials</string>
+    <!--premium 1 coins-->
+    <string name="r25">250 Rials</string>
+    <string name="r10">100 Rials</string>
+    <string name="r5">50 Rials</string>
+    <!--premium 2 coins-->
+    <string name="r52">50 Rials</string>
+    <string name="r2">2 Rials</string>
+    <string name="r1">1 Rial</string>
+    <string name="d1">1 Dollar</string>
+</resources>

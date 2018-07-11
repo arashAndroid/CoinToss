@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_activity_title">Über \"Münze werfen\"</string>
+    <string name="about_text">Die einfache Art eine Münze zu werfen, obwohl gerade keine zur Hand
+        ist. Nur kurz das Fragezeichen antippen oder Mobilgerät schütteln, um die Münze zu werfen.
+        Antippen oder schütteln für erneutes Werfen...
+        \n\n\nViertel-Dollar Münzbilder von \"United States Mint\".
+        Ein-Dollar Präsidenten Münzbilder von \"United States Mint\".
+        \n\n\nCopyright © 2016 - Richard Banasiak
+        \nOpen-source Beiträge von Alex Baker, Ciaran Gultnieks, Spanti Nicola &amp; Michael Riepen.
+    </string>
+    <string name="app_name">Münze werfen</string>
+    <string name="exit">Beenden</string>
+    <string name="instructions_tap_shake_tv">Tippen/Schütteln, um Münze zu werfen</string>
+    <string name="heads">KOPF</string>
+    <string name="max">MAX</string>
+    <string name="milliseconds">ms</string>
+    <string name="min">AUS</string>
+    <string name="new_coins">Genial! Neue Münzen verfügbar!</string>
+    <string name="rate_app_text">App bei Google Play bewerten</string>
+    <string name="tails">ZAHL</string>
+    <string name="time">ZEIT</string>
+    <string name="toast_coin_error">Münze nicht gefunden - Auswahl wird zurückgesetzt</string>
+    <string name="total">GESAMT</string>
+    <string name="unknown">UNBEKANNT</string>
+    <string name="version">Version</string>
+    <string name="customize">die Einstellungen</string>
+    <string name="about_menu_title">Über...</string>
+    <string name="coin_animation">Münz Animation</string>
+    <string name="instructions_tap_tv">Tippen, um Münze zu werfen</string>
+    <string name="reset">Zurücksetzen</string>
+    <string name="laguage">Deutsche</string>
+    <string name="coin">Coin</string>
+    <string name="tapToBuy">Zum Kaufen tippen (Nur im Iran)</string>
+
+    <!--free coins-->
+    <string name="r500">5000 Rials</string>
+    <string name="r200">2000 Rials</string>
+    <string name="r100">1000 Rials</string>
+    <string name="r50">500 Rials</string>
+    <!--premium 1 coins-->
+    <string name="r25">250 Rials</string>
+    <string name="r10">100 Rials</string>
+    <string name="r5">50 Rials</string>
+    <!--premium 2 coins-->
+    <string name="r52">50 Rials</string>
+    <string name="r2">2 Rials</string>
+    <string name="r1">1 Rial</string>
+    <string name="d1">1 Dollar</string>
+
+</resources>
