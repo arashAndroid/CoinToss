@@ -13,7 +13,7 @@
         <!--**************FREE Coins***************-->
         <!--500 Toman-->
         <android.support.v7.widget.CardView
-
+            android:id="@+id/card500"
             app:cardBackgroundColor="@color/white"
             android:clickable="false"
             android:focusable="false"
@@ -23,7 +23,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RelativeLayout
-                android:background="@drawable/coin_card_bg"
                 android:id="@+id/relCoin500"
                 android:clickable="true"
                 android:focusable="true"
@@ -82,6 +81,7 @@
                     </LinearLayout>
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cardBot500"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
                         app:contentPadding="8dp"
@@ -108,7 +108,7 @@
         </android.support.v7.widget.CardView>
         <!--200 Toman-->
         <android.support.v7.widget.CardView
-
+            android:id="@+id/card200"
             app:cardBackgroundColor="@color/white"
             android:clickable="false"
             android:focusable="false"
@@ -118,7 +118,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RelativeLayout
-                android:background="@drawable/coin_card_bg"
                 android:id="@+id/relCoin200"
                 android:clickable="true"
                 android:focusable="true"
@@ -177,6 +176,7 @@
                     </LinearLayout>
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cardBot200"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
                         app:contentPadding="8dp"
@@ -201,7 +201,7 @@
         </android.support.v7.widget.CardView>
         <!--100 Toman-->
         <android.support.v7.widget.CardView
-
+            android:id="@+id/card100"
             app:cardBackgroundColor="@color/white"
             android:clickable="false"
             android:focusable="false"
@@ -211,7 +211,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RelativeLayout
-                android:background="@drawable/coin_card_bg"
                 android:id="@+id/relCoin100"
                 android:clickable="true"
                 android:focusable="true"
@@ -270,6 +269,7 @@
                     </LinearLayout>
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cardBot100"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
                         app:contentPadding="8dp"
@@ -294,7 +294,7 @@
         </android.support.v7.widget.CardView>
         <!--50 Toman-->
         <android.support.v7.widget.CardView
-
+            android:id="@+id/card50"
             app:cardBackgroundColor="@color/white"
             android:clickable="false"
             android:focusable="false"
@@ -304,7 +304,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RelativeLayout
-                android:background="@drawable/coin_card_bg"
                 android:id="@+id/relCoin50"
                 android:clickable="true"
                 android:focusable="true"
@@ -363,6 +362,7 @@
                     </LinearLayout>
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cardBot50"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
                         app:contentPadding="8dp"
@@ -388,7 +388,7 @@
         <!--**************Premium Coins***************-->
         <!--1 Dollar-->
         <android.support.v7.widget.CardView
-
+            android:id="@+id/card1d"
             app:cardBackgroundColor="@color/white"
             android:clickable="false"
             android:focusable="false"
@@ -398,7 +398,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RelativeLayout
-                android:background="@drawable/coin_card_bg"
                 android:id="@+id/relCoind1"
                 android:clickable="false"
                 android:focusable="false"
@@ -457,6 +456,7 @@
                     </LinearLayout>
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cardBot1d"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
                         app:contentPadding="8dp"
@@ -506,7 +506,7 @@
         </android.support.v7.widget.CardView>
         <!--25 Toman-->
         <android.support.v7.widget.CardView
-
+            android:id="@+id/card25"
             app:cardBackgroundColor="@color/white"
             android:clickable="false"
             android:focusable="false"
@@ -516,7 +516,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RelativeLayout
-                android:background="@drawable/coin_card_bg"
                 android:id="@+id/relCoin25"
                 android:clickable="false"
                 android:focusable="false"
@@ -575,6 +574,7 @@
                     </LinearLayout>
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cardBot25"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
                         app:contentPadding="8dp"
@@ -624,7 +624,7 @@
         </android.support.v7.widget.CardView>
         <!--10 Toman-->
         <android.support.v7.widget.CardView
-
+            android:id="@+id/card10"
             app:cardBackgroundColor="@color/white"
             android:clickable="false"
             android:focusable="false"
@@ -634,7 +634,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RelativeLayout
-                android:background="@drawable/coin_card_bg"
                 android:id="@+id/relCoin10"
                 android:clickable="false"
                 android:focusable="false"
@@ -693,6 +692,7 @@
                     </LinearLayout>
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cardBot10"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
                         app:contentPadding="8dp"
@@ -742,6 +742,7 @@
         </android.support.v7.widget.CardView>
         <!--5 Toman-->
         <android.support.v7.widget.CardView
+            android:id="@+id/card5"
             app:cardBackgroundColor="@color/white"
             android:clickable="false"
             android:focusable="false"
@@ -751,7 +752,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RelativeLayout
-                android:background="@drawable/coin_card_bg"
                 android:id="@+id/relCoin5"
                 android:clickable="false"
                 android:focusable="false"
@@ -810,6 +810,7 @@
                     </LinearLayout>
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cardBot5"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
                         app:contentPadding="8dp"
@@ -859,7 +860,7 @@
         </android.support.v7.widget.CardView>
         <!--5 Toman-->
         <android.support.v7.widget.CardView
-
+            android:id="@+id/card52"
             app:cardBackgroundColor="@color/white"
             android:clickable="false"
             android:focusable="false"
@@ -869,7 +870,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RelativeLayout
-                android:background="@drawable/coin_card_bg"
                 android:id="@+id/relCoin52"
                 android:clickable="false"
                 android:focusable="false"
@@ -928,6 +928,7 @@
                     </LinearLayout>
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cardBot52"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
                         app:contentPadding="8dp"
@@ -977,7 +978,7 @@
         </android.support.v7.widget.CardView>
         <!--2 rial-->
         <android.support.v7.widget.CardView
-
+            android:id="@+id/card2"
             app:cardBackgroundColor="@color/white"
             android:clickable="false"
             android:focusable="false"
@@ -987,7 +988,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RelativeLayout
-                android:background="@drawable/coin_card_bg"
                 android:id="@+id/relCoin2"
                 android:clickable="false"
                 android:focusable="false"
@@ -1046,6 +1046,7 @@
                     </LinearLayout>
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cardBot2"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
                         app:contentPadding="8dp"
@@ -1095,7 +1096,7 @@
         </android.support.v7.widget.CardView>
         <!--1 rial-->
         <android.support.v7.widget.CardView
-
+            android:id="@+id/card1"
             app:cardBackgroundColor="@color/white"
             android:clickable="false"
             android:focusable="false"
@@ -1105,7 +1106,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RelativeLayout
-                android:background="@drawable/coin_card_bg"
                 android:id="@+id/relCoin1"
                 android:clickable="false"
                 android:focusable="false"
@@ -1164,6 +1164,7 @@
                     </LinearLayout>
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cardBot1"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
                         app:contentPadding="8dp"

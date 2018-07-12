@@ -7,6 +7,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.Window;
 import android.widget.LinearLayout;
@@ -23,6 +24,9 @@ public class CoinDialog extends Dialog {
     public Dialog d;
     public RelativeLayout relCoin500,relCoin200,relCoin100,relCoin50,relCoin25,relCoin10,relCoin5,relCoin52,relCoin2,relCoin1,relCoind1;
     public LinearLayout lockCoin25,lockCoin10,lockCoin5,lockCoin52,lockCoin2,lockCoin1,lockCoind1;
+    //For Theme
+    public CardView card500,card200,card100,card50,card1d,card25,card10,card5,card52,card2,card1;
+    public CardView cardBot500,cardBot200,cardBot100,cardBot50,cardBot1d,cardBot25,cardBot10,cardBot5,cardBot52,cardBot2,cardBot1;
     SharedPrefManager sharedPrefManager;
     public CoinDialog(Activity a) {
         super(a);
@@ -55,6 +59,33 @@ public class CoinDialog extends Dialog {
         lockCoin2 = findViewById(R.id.lockCoin2);
         lockCoin1 = findViewById(R.id.lockCoin1);
         lockCoind1 = findViewById(R.id.lockCoind1);
+
+        //For Theme
+        card500 = findViewById(R.id.card500);
+        card200 = findViewById(R.id.card200);
+        card100 = findViewById(R.id.card100);
+        card50  = findViewById(R.id.card50);
+        card1d  = findViewById(R.id.card1d);
+        card25  = findViewById(R.id.card25);
+        card10  = findViewById(R.id.card10);
+        card5   = findViewById(R.id.card5);
+        card52  = findViewById(R.id.card52);
+        card2   = findViewById(R.id.card2);
+        card1   = findViewById(R.id.card1);
+        cardBot500  = findViewById(R.id.cardBot500);
+        cardBot200   = findViewById(R.id.cardBot200);
+        cardBot100   = findViewById(R.id.cardBot100);
+        cardBot50   = findViewById(R.id.cardBot50);
+        cardBot1d   = findViewById(R.id.cardBot1d);
+        cardBot25   = findViewById(R.id.cardBot25);
+        cardBot10    = findViewById(R.id.cardBot10);
+        cardBot5    = findViewById(R.id.cardBot5);
+        cardBot52    = findViewById(R.id.cardBot52);
+        cardBot2    = findViewById(R.id.cardBot2);
+        cardBot1    = findViewById(R.id.cardBot1);
+
+        setThemeById(sharedPrefManager.getTheme());
+        //
 
         if (sharedPrefManager.hasPremium()){
             lockCoin25.setClickable(false);
@@ -261,6 +292,128 @@ public class CoinDialog extends Dialog {
 
 
     }
+
+    private void setThemeById(int themeId) {
+        if (themeId==1){
+            card500.setCardBackgroundColor(c.getResources().getColor(R.color.lime));
+            card200.setCardBackgroundColor(c.getResources().getColor(R.color.lime));
+            card100.setCardBackgroundColor(c.getResources().getColor(R.color.lime));
+            card50 .setCardBackgroundColor(c.getResources().getColor(R.color.lime));
+            card1d .setCardBackgroundColor(c.getResources().getColor(R.color.lime));
+            card25 .setCardBackgroundColor(c.getResources().getColor(R.color.lime));
+            card10 .setCardBackgroundColor(c.getResources().getColor(R.color.lime));
+            card52 .setCardBackgroundColor(c.getResources().getColor(R.color.lime));
+            card5  .setCardBackgroundColor(c.getResources().getColor(R.color.lime));
+            card2  .setCardBackgroundColor(c.getResources().getColor(R.color.lime));
+            card1  .setCardBackgroundColor(c.getResources().getColor(R.color.lime));
+            cardBot500.setCardBackgroundColor(c.getResources().getColor(R.color.green));
+            cardBot200.setCardBackgroundColor(c.getResources().getColor(R.color.green));
+            cardBot100.setCardBackgroundColor(c.getResources().getColor(R.color.green));
+            cardBot50 .setCardBackgroundColor(c.getResources().getColor(R.color.green));
+            cardBot1d .setCardBackgroundColor(c.getResources().getColor(R.color.green));
+            cardBot25 .setCardBackgroundColor(c.getResources().getColor(R.color.green));
+            cardBot10 .setCardBackgroundColor(c.getResources().getColor(R.color.green));
+            cardBot5  .setCardBackgroundColor(c.getResources().getColor(R.color.green));
+            cardBot52 .setCardBackgroundColor(c.getResources().getColor(R.color.green));
+            cardBot2  .setCardBackgroundColor(c.getResources().getColor(R.color.green));
+            cardBot1  .setCardBackgroundColor(c.getResources().getColor(R.color.green));
+        }else if (themeId==2){
+            card500.setCardBackgroundColor(c.getResources().getColor(R.color.myBlue));
+            card200.setCardBackgroundColor(c.getResources().getColor(R.color.myBlue));
+            card100.setCardBackgroundColor(c.getResources().getColor(R.color.myBlue));
+            card50 .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue));
+            card1d .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue));
+            card25 .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue));
+            card10 .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue));
+            card52 .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue));
+            card5  .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue));
+            card2  .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue));
+            card1  .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue));
+            cardBot500.setCardBackgroundColor(c.getResources().getColor(R.color.myBlue_light));
+            cardBot200.setCardBackgroundColor(c.getResources().getColor(R.color.myBlue_light));
+            cardBot100.setCardBackgroundColor(c.getResources().getColor(R.color.myBlue_light));
+            cardBot50 .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue_light));
+            cardBot1d .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue_light));
+            cardBot25 .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue_light));
+            cardBot10 .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue_light));
+            cardBot5  .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue_light));
+            cardBot52 .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue_light));
+            cardBot2  .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue_light));
+            cardBot1  .setCardBackgroundColor(c.getResources().getColor(R.color.myBlue_light));
+        }else if (themeId==3){
+            card500.setCardBackgroundColor(c.getResources().getColor(R.color.red));
+            card200.setCardBackgroundColor(c.getResources().getColor(R.color.red));
+            card100.setCardBackgroundColor(c.getResources().getColor(R.color.red));
+            card50 .setCardBackgroundColor(c.getResources().getColor(R.color.red));
+            card1d .setCardBackgroundColor(c.getResources().getColor(R.color.red));
+            card25 .setCardBackgroundColor(c.getResources().getColor(R.color.red));
+            card10 .setCardBackgroundColor(c.getResources().getColor(R.color.red));
+            card52 .setCardBackgroundColor(c.getResources().getColor(R.color.red));
+            card5  .setCardBackgroundColor(c.getResources().getColor(R.color.red));
+            card2  .setCardBackgroundColor(c.getResources().getColor(R.color.red));
+            card1  .setCardBackgroundColor(c.getResources().getColor(R.color.red));
+            cardBot500.setCardBackgroundColor(c.getResources().getColor(R.color.red_light));
+            cardBot200.setCardBackgroundColor(c.getResources().getColor(R.color.red_light));
+            cardBot100.setCardBackgroundColor(c.getResources().getColor(R.color.red_light));
+            cardBot50 .setCardBackgroundColor(c.getResources().getColor(R.color.red_light));
+            cardBot1d .setCardBackgroundColor(c.getResources().getColor(R.color.red_light));
+            cardBot25 .setCardBackgroundColor(c.getResources().getColor(R.color.red_light));
+            cardBot10 .setCardBackgroundColor(c.getResources().getColor(R.color.red_light));
+            cardBot5  .setCardBackgroundColor(c.getResources().getColor(R.color.red_light));
+            cardBot52 .setCardBackgroundColor(c.getResources().getColor(R.color.red_light));
+            cardBot2  .setCardBackgroundColor(c.getResources().getColor(R.color.red_light));
+            cardBot1  .setCardBackgroundColor(c.getResources().getColor(R.color.red_light));
+        }else if (themeId==4){
+            card500.setCardBackgroundColor(c.getResources().getColor(R.color.black));
+            card200.setCardBackgroundColor(c.getResources().getColor(R.color.black));
+            card100.setCardBackgroundColor(c.getResources().getColor(R.color.black));
+            card50 .setCardBackgroundColor(c.getResources().getColor(R.color.black));
+            card1d .setCardBackgroundColor(c.getResources().getColor(R.color.black));
+            card25 .setCardBackgroundColor(c.getResources().getColor(R.color.black));
+            card10 .setCardBackgroundColor(c.getResources().getColor(R.color.black));
+            card52 .setCardBackgroundColor(c.getResources().getColor(R.color.black));
+            card5  .setCardBackgroundColor(c.getResources().getColor(R.color.black));
+            card2  .setCardBackgroundColor(c.getResources().getColor(R.color.black));
+            card1  .setCardBackgroundColor(c.getResources().getColor(R.color.black));
+            cardBot500.setCardBackgroundColor(c.getResources().getColor(R.color.black_light));
+            cardBot200.setCardBackgroundColor(c.getResources().getColor(R.color.black_light));
+            cardBot100.setCardBackgroundColor(c.getResources().getColor(R.color.black_light));
+            cardBot50 .setCardBackgroundColor(c.getResources().getColor(R.color.black_light));
+            cardBot1d .setCardBackgroundColor(c.getResources().getColor(R.color.black_light));
+            cardBot25 .setCardBackgroundColor(c.getResources().getColor(R.color.black_light));
+            cardBot10 .setCardBackgroundColor(c.getResources().getColor(R.color.black_light));
+            cardBot5  .setCardBackgroundColor(c.getResources().getColor(R.color.black_light));
+            cardBot52 .setCardBackgroundColor(c.getResources().getColor(R.color.black_light));
+            cardBot2  .setCardBackgroundColor(c.getResources().getColor(R.color.black_light));
+            cardBot1  .setCardBackgroundColor(c.getResources().getColor(R.color.black_light));
+        }else if (themeId==5){
+            card500.setCardBackgroundColor(c.getResources().getColor(R.color.golden));
+            card200.setCardBackgroundColor(c.getResources().getColor(R.color.golden));
+            card100.setCardBackgroundColor(c.getResources().getColor(R.color.golden));
+            card50 .setCardBackgroundColor(c.getResources().getColor(R.color.golden));
+            card1d .setCardBackgroundColor(c.getResources().getColor(R.color.golden));
+            card25 .setCardBackgroundColor(c.getResources().getColor(R.color.golden));
+            card10 .setCardBackgroundColor(c.getResources().getColor(R.color.golden));
+            card52 .setCardBackgroundColor(c.getResources().getColor(R.color.golden));
+            card5  .setCardBackgroundColor(c.getResources().getColor(R.color.golden));
+            card2  .setCardBackgroundColor(c.getResources().getColor(R.color.golden));
+            card1  .setCardBackgroundColor(c.getResources().getColor(R.color.golden));
+            cardBot500.setCardBackgroundColor(c.getResources().getColor(R.color.golden2));
+            cardBot200.setCardBackgroundColor(c.getResources().getColor(R.color.golden2));
+            cardBot100.setCardBackgroundColor(c.getResources().getColor(R.color.golden2));
+            cardBot50 .setCardBackgroundColor(c.getResources().getColor(R.color.golden2));
+            cardBot1d .setCardBackgroundColor(c.getResources().getColor(R.color.golden2));
+            cardBot25 .setCardBackgroundColor(c.getResources().getColor(R.color.golden2));
+            cardBot10 .setCardBackgroundColor(c.getResources().getColor(R.color.golden2));
+            cardBot5  .setCardBackgroundColor(c.getResources().getColor(R.color.golden2));
+            cardBot52 .setCardBackgroundColor(c.getResources().getColor(R.color.golden2));
+            cardBot2  .setCardBackgroundColor(c.getResources().getColor(R.color.golden2));
+            cardBot1  .setCardBackgroundColor(c.getResources().getColor(R.color.golden2));
+        }else{
+
+        }
+    }
+
     public void setCoinImageId(int headsID,int tailsID) {
         sharedPrefManager.setTailsId(tailsID);
         sharedPrefManager.setHeadsId(headsID);

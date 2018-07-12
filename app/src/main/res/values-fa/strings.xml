@@ -3,14 +3,9 @@
 <string name="about_activity_title">درباره شیر یا خط</string>
 <string name="about_menu_title">درباره ما</string>
 <string name="about_text">
-        A convenient way to flip a coin, even if you don\'t have one.
-        Simply tap the question mark or shake and view the result. Tap or shake
-        to spin the coin again.
-        \n\n\nQuarter-dollar coin images from the United States Mint.
-        Presidential $1 Coin images from the United States Mint.
-        \n\n\nCopyright © 2016 - Richard Banasiak
-        \nOpen-source contributions from Alex Baker, Ciaran Gultnieks, Spanti Nicola &amp; Michael
-        Riepen.
+        یه راه آسون برای پرتاب سکه، حتی اگه سکه همراهت نباشه. به راحتی روی سکه کلیک کن تا سکه بچرخه.
+    \n\n\n\n این اپلیکیشن توسط آرش محمدی سال ۱۳۹۷ ساخته شده است
+    \n ایمیل: arash13131313@gmail.com
     </string>
 <string name="app_name">شیر یا خط</string>
 <string name="exit">خروج</string>
@@ -20,7 +15,7 @@
 <string name="min">خاموش</string>
 <string name="rate_app_text">به شیر یا خط امتیاز بده!</string>
 <string name="reset">بازنشانی</string>
-<string name="customize">تنظیمات</string>
+<string name="customize">شخصی سازی</string>
 <string name="laguage">فارسی</string>
 <string name="tails">خط</string>
 <string name="time">زمان</string>
@@ -28,7 +23,29 @@
 <string name="unknown">نامعلوم</string>
 <string name="version">نسخه</string>
 <string name="coin">سکه</string>
+<string name="alreadyPremium">این بسته رو قبلا خریدی!</string>
+
+    <string name="coin_list">
+        <li>۱ دلاری</li>\n
+        <li>۲۵ تومنی</li>\n
+        <li>۱۰ تومنی</li>\n
+        <li>۵ تومنی</li>\n
+        <li>۵ تومنی</li>\n
+        <li>۲ ریالی</li>\n
+        <li>۱ ریالی </li>
+    </string>
+    <string name="theme_list">
+        <li>Blue Theme</li>\n
+        <li>Red Theme</li>\n
+        <li>Black Theme</li>\n
+        <li>Golden Theme</li>
+    </string>
     <string name="tapToBuy">برای خرید لمس کن</string>
+    <string name="buyButton">خرید (۱۹۰۰ تومان)</string>
+    <string name="buyExplain"> اگه این بسته رو بخری می‌تونی با سکه‌ها و تم‌های زیبا، شیر یا خط رو خوشگلش کنی و از ما حمایت کنی :)!</string>
+    <string name="buyUnlocksCoin">سکه‌هایی که بعد از خرید می‌تونی استفاده کنی:</string>
+    <string name="buyUnlocksTheme">سکه‌هایی که بعد از خرید می‌تونی استفاده کنی:</string>
+
     <!--free themes-->
     <string name="defaultTheme">پیش فرض</string>
     <string name="greenTheme">سبز</string>

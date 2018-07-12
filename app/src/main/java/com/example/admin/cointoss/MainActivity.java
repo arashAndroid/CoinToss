@@ -155,7 +155,6 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
         sharedPrefManager = new SharedPrefManager(getApplicationContext());
-        sharedPrefManager.setPremium();
         if (sharedPrefManager.isFirstRun()){
             LanguageDialog languageDialog = new LanguageDialog(MainActivity.this);
             languageDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));

@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="about_activity_title">About Coin Flip</string>
-    <string name="about_menu_title">About</string>
+    <string name="about_menu_title">About us</string>
     <string name="about_text">
         A convenient way to flip a coin, even if you don\'t have one.
-        Simply tap the question mark or shake and view the result. Tap or shake
-        to spin the coin again.
-        \n\n\nQuarter-dollar coin images from the United States Mint.
-        Presidential $1 Coin images from the United States Mint.
-        \n\n\nCopyright © 2016 - Richard Banasiak
-        \nOpen-source contributions from Alex Baker, Ciaran Gultnieks, Spanti Nicola &amp; Michael
-        Riepen.
+        Simply tap the coin mark to view the result.
+        \n\n\n\n Copyright © 2018 - Arash Mohammadi
+        \n Email: arash13131313@gmail.com
     </string>
     <string name="app_name">Coin Flip</string>
     <string name="coin_animation">Coin Animation</string>
@@ -33,7 +29,28 @@
     <string name="version">version</string>
     <string name="laguage">English</string>
     <string name="coin">Coins</string>
+    <string name="buyButton">Buy (1900 Tomans)</string>
+    <string name="buyExplain">By buying this package, you will unlock all themes and coins. And you will support us :)!</string>
+    <string name="buyUnlocksCoin">Coin Unlocks:</string>
+    <string name="buyUnlocksTheme">Theme Unlocks:</string>
     <string name="tapToBuy">Tap to buy (Only in Iran)</string>
+    <string name="alreadyPremium">You already have this package!</string>
+
+    <string name="coin_list">
+        <li>1 Dollar</li>\n
+        <li>250 Rials</li>\n
+        <li>100 Rials</li>\n
+        <li>50 Rials</li>\n
+        <li>50 Rials</li>\n
+        <li>2 Rials</li>\n
+        <li>1 Rials</li>
+    </string>
+    <string name="theme_list">
+        <li>Blue Theme</li>\n
+        <li>Red Theme</li>\n
+        <li>Black Theme</li>\n
+        <li>Golden Theme</li>
+    </string>
     <!--free themes-->
     <string name="defaultTheme">Default</string>
     <string name="greenTheme">Green</string>

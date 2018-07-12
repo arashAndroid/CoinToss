@@ -1,9 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:padding="20dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Shop">
 
+        <LinearLayout
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <com.example.admin.cointoss.MyTextView
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="@string/buyExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/myBlue"
+            android:textColor="@color/white"
+            android:text="@string/buyButton"
+            android:id="@+id/btnBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+                <com.example.admin.cointoss.MyTextView
+                    android:gravity="center"
+                    android:text="@string/buyUnlocksCoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.example.admin.cointoss.MyTextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coin_list"
+                    android:textSize="18dp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+                <com.example.admin.cointoss.MyTextView
+                    android:gravity="center"
+                    android:text="@string/buyUnlocksTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.example.admin.cointoss.MyTextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coin_list"
+                    android:textSize="18dp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:text="@string/about_menu_title"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.example.admin.cointoss.MyTextView
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="@string/about_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </RelativeLayout>
+</ScrollView>
