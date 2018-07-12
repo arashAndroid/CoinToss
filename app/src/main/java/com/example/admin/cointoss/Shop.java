@@ -1,5 +1,6 @@
 package com.example.admin.cointoss;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,7 +15,7 @@ import com.example.android.trivialdrivesample.util.Purchase;
 
 public class Shop extends AppCompatActivity {
     // Debug tag, for logging // Debug tag, for logging
-    static final String TAG = "Samenta.ir";
+    static final String TAG = "coinToss";
     // SKUs for our products: the premium upgrade (non-consumable)
     static final String SKU_PREMIUM = "upgrade_to_premium";
     // Does the user have the premium upgrade?
@@ -32,7 +33,7 @@ public class Shop extends AppCompatActivity {
         sharedPrefManager = new SharedPrefManager(getApplicationContext());
         btnBuy = findViewById(R.id.btnBuy);
 
-        String base64EncodedPublicKey = "MIHNMA0GCSqGSIb3DQEBAQUAA4G7ADCBtwKBrwCc6UwyWENw6lmfxSIYRmxN8sTSRjEiNDiOsDG7J/EuKjNNwowr3zArGIy0nXfw6U1fd2SXwPI9buC2BCL/detzByUcYATq19GMnWhEHCid1oWKelKr0Q57uRIvOztF4WET2bv/S4qUUqrV7ukVGFm42nasJCqASiXZyJTF5pfu2UKHtxCo6Rt/+xqbPioV26LaXGItTfZurQoYbGNE7OalPVCDzI7iBmQb73gCzZUCAwEAAQ==\n";
+        String base64EncodedPublicKey = "MIHNMA0GCSqGSIb3DQEBAQUAA4G7ADCBtwKBrwCc6UwyWENw6lmfxSIYRmxN8sTSRjEiNDiOsDG7J/EuKjNNwowr3zArGIy0nXfw6U1fd2SXwPI9buC2BCL/detzByUcYATq19GMnWhEHCid1oWKelKr0Q57uRIvOztF4WET2bv/S4qUUqrV7ukVGFm42nasJCqASiXZyJTF5pfu2UKHtxCo6Rt/+xqbPioV26LaXGItTfZurQoYbGNE7OalPVCDzI7iBmQb73gCzZUCAwEAAQ==";
         mHelper = new IabHelper(this, base64EncodedPublicKey);
         mGotInventoryListener = new IabHelper.QueryInventoryFinishedListener() {
             public void onQueryInventoryFinished(IabResult result, Inventory inventory) {
@@ -72,7 +73,13 @@ public class Shop extends AppCompatActivity {
                     // Oh noes, there was a problem.
                     Log.d(TAG, "Problem setting up In-app Billing: " + result);
                 } // Hooray, IAB is fully set up!
-                mHelper.queryInventoryAsync(mGotInventoryListener);
+                try {
+                    mHelper.queryInventoryAsync(mGotInventoryListener);
+                }catch (Exception e){
+
+                    Toast.makeText(Shop.this,"بازار نصب نیست!",Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
@@ -86,5 +93,24 @@ public class Shop extends AppCompatActivity {
                 }
             }
         });
+    }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (mHelper != null) mHelper.dispose();
+        mHelper = null;
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        Log.d(TAG, "onActivityResult(" + requestCode + "," + resultCode + "," + data);
+
+        // Pass on the activity result to the helper for handling
+        if (!mHelper.handleActivityResult(requestCode, resultCode, data)) {
+            super.onActivityResult(requestCode, resultCode, data);
+        } else {
+            Log.d(TAG, "onActivityResult handled by IABUtil.");
+        }
     }
 }
