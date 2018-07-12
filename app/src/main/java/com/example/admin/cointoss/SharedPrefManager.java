@@ -51,12 +51,21 @@ public class SharedPrefManager {
     public boolean getSoundPref(){
         return pref.getBoolean("soundPref",true);
     }
+
     public void setPremium(){
         editor.putBoolean("premium",true);
         editor.commit();
     }
     public boolean hasPremium(){
         return pref.getBoolean("premium",false);
+    }
+
+    public void setTheme(int themeId){
+        editor.putInt("themeId",themeId);
+        editor.commit();
+    }
+    public int getTheme(){
+        return pref.getInt("themeId",0);
     }
 
 }

@@ -70,25 +70,33 @@ public class ThemeDialog extends Dialog {
             relThemeBlue.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    setCoinImageId(R.drawable.b25,R.drawable.f25);
+                    sharedPrefManager.setTheme(2);
+                    dismiss();
+                    c.recreate();
                 }
             });
             relThemeRed.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    setCoinImageId(R.drawable.b10,R.drawable.f10);
+                    sharedPrefManager.setTheme(3);
+                    dismiss();
+                    c.recreate();
                 }
             });
             relThemeBlack.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    setCoinImageId(R.drawable.b5,R.drawable.f5);
+                    sharedPrefManager.setTheme(4);
+                    dismiss();
+                    c.recreate();
                 }
             });
             relThemeGolden.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    setCoinImageId(R.drawable.b2,R.drawable.f2);
+                    sharedPrefManager.setTheme(5);
+                    dismiss();
+                    c.recreate();
                 }
             });
 
@@ -154,13 +162,17 @@ public class ThemeDialog extends Dialog {
         relThemeDefault.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setCoinImageId(R.drawable.b500,R.drawable.f500);
+                sharedPrefManager.setTheme(0);
+                dismiss();
+                c.recreate();
             }
         });
         relThemeGreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setCoinImageId(R.drawable.b200,R.drawable.f200);
+                sharedPrefManager.setTheme(1);
+                dismiss();
+                c.recreate();
             }
         });
 
@@ -169,12 +181,7 @@ public class ThemeDialog extends Dialog {
 
 
     }
-    public void setCoinImageId(int headsID,int tailsID) {
-        sharedPrefManager.setTailsId(tailsID);
-        sharedPrefManager.setHeadsId(headsID);
-        dismiss();
-        c.recreate();
-    }
+
 
 
 }

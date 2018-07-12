@@ -13,7 +13,6 @@
         <!--**************FREE Coins***************-->
         <!--Default-->
         <android.support.v7.widget.CardView
-
             app:cardBackgroundColor="@color/white"
             android:clickable="false"
             android:focusable="false"
@@ -91,7 +90,6 @@
         </android.support.v7.widget.CardView>
         <!--Green-->
         <android.support.v7.widget.CardView
-
             app:cardBackgroundColor="@color/lime"
             android:clickable="false"
             android:focusable="false"
@@ -154,7 +152,7 @@
                             android:focusable="false"
                             android:gravity="center"
                             android:textSize="20sp"
-                            android:text="@string/r200"
+                            android:text="@string/greenTheme"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent" />
                     </android.support.v7.widget.CardView>
@@ -165,8 +163,7 @@
         <!--**************Premium Coins***************-->
         <!--Blue-->
         <android.support.v7.widget.CardView
-
-            app:cardBackgroundColor="@color/aqua"
+            app:cardBackgroundColor="@color/myBlue"
             android:clickable="false"
             android:focusable="false"
             android:layout_marginRight="16dp"
@@ -219,7 +216,7 @@
                         app:contentPadding="8dp"
                         app:cardElevation="5dp"
                         app:cardCornerRadius="1dp"
-                        app:cardBackgroundColor="@color/myBlue"
+                        app:cardBackgroundColor="@color/myBlue_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <com.example.admin.cointoss.MyTextView
@@ -228,7 +225,7 @@
                             android:focusable="false"
                             android:gravity="center"
                             android:textSize="20sp"
-                            android:text="@string/d1"
+                            android:text="@string/blueTheme"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent" />
                     </android.support.v7.widget.CardView>
@@ -263,7 +260,6 @@
         </android.support.v7.widget.CardView>
         <!--Red-->
         <android.support.v7.widget.CardView
-
             app:cardBackgroundColor="@color/red"
             android:clickable="false"
             android:focusable="false"
@@ -320,7 +316,7 @@
                         app:contentPadding="8dp"
                         app:cardElevation="5dp"
                         app:cardCornerRadius="1dp"
-                        app:cardBackgroundColor="@color/heads"
+                        app:cardBackgroundColor="@color/red_light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <com.example.admin.cointoss.MyTextView
@@ -329,7 +325,7 @@
                             android:focusable="false"
                             android:gravity="center"
                             android:textSize="20sp"
-                            android:text="@string/r25"
+                            android:text="@string/redTheme"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent" />
                     </android.support.v7.widget.CardView>
@@ -364,7 +360,6 @@
         </android.support.v7.widget.CardView>
         <!--Black-->
         <android.support.v7.widget.CardView
-
             app:cardBackgroundColor="@color/black"
             android:clickable="false"
             android:focusable="false"
@@ -430,7 +425,7 @@
                             android:focusable="false"
                             android:gravity="center"
                             android:textSize="20sp"
-                            android:text="@string/r10"
+                            android:text="@string/blackTheme"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent" />
                     </android.support.v7.widget.CardView>
@@ -492,9 +487,6 @@
                         android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
-
-
                         <LinearLayout
                             android:gravity="center_horizontal"
                             android:orientation="vertical"
@@ -512,9 +504,7 @@
                                 android:layout_width="180dp"
                                 android:layout_height="wrap_content" />
                         </LinearLayout>
-
                     </LinearLayout>
-
                     <android.support.v7.widget.CardView
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
@@ -530,7 +520,7 @@
                             android:focusable="false"
                             android:gravity="center"
                             android:textSize="20sp"
-                            android:text="@string/r5"
+                            android:text="@string/goldenTheme"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent" />
                     </android.support.v7.widget.CardView>

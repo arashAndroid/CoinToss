@@ -19,7 +19,10 @@ import android.media.SoundPool;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -30,6 +33,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -80,6 +84,16 @@ public class MainActivity extends AppCompatActivity {
     private MyTextView txtCoin;
 
     private MyTextView txtCustomize;
+
+    private MyTextView txtHeadsTitle;
+
+    private MyTextView txtTailsTitle;
+
+    private CardView cardMain ;
+
+    private CardView cardBot ;
+
+    private RelativeLayout relMain;
 
     private ImageButton statsResetButton;
 
@@ -141,8 +155,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
         sharedPrefManager = new SharedPrefManager(getApplicationContext());
-        // initialize the coin image and result text views
-
+        sharedPrefManager.setPremium();
         if (sharedPrefManager.isFirstRun()){
             LanguageDialog languageDialog = new LanguageDialog(MainActivity.this);
             languageDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -151,6 +164,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         initViews();
+
+        setThemeById(sharedPrefManager.getTheme());
 
 
         coinImage.setImageDrawable(getResources().getDrawable(sharedPrefManager.getTailsId()));
@@ -213,8 +228,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
     public void setCoinImage(int headsID,int tailsID) {
         heads = getResources().getDrawable(headsID);
         tails = getResources().getDrawable(tailsID);
@@ -411,16 +424,13 @@ public class MainActivity extends AppCompatActivity {
                 case HEADS_HEADS:
                 case TAILS_HEADS:
                     resultText.setText(R.string.heads);
-                    resultText.setTextColor(getResources().getColor(R.color.heads));
                     break;
                 case HEADS_TAILS:
                 case TAILS_TAILS:
                     resultText.setText(R.string.tails);
-                    resultText.setTextColor(getResources().getColor(R.color.tails));
                     break;
                 default:
                     resultText.setText(R.string.unknown);
-                    resultText.setTextColor(getResources().getColor(R.color.gray));
                     break;
             }
 
@@ -484,6 +494,110 @@ public class MainActivity extends AppCompatActivity {
         txtCoin = (MyTextView) findViewById(R.id.txtCoin);
         statsResetButton = (ImageButton) findViewById(R.id.stats_reset_button);
         statsLayout = (LinearLayout) findViewById(R.id.statistics_layout);
+
+        //for theme
+        relMain = findViewById(R.id.rel_main);
+        txtTailsTitle = findViewById(R.id.txtTailsTitle);
+        txtHeadsTitle = findViewById(R.id.txtHeadsTitle);
+        cardMain = findViewById(R.id.card_main);
+        cardBot = findViewById(R.id.card_bot);
+    }
+    private void setThemeById(int themeId) {
+        if (themeId==1){
+            relMain.setBackgroundColor(getResources().getColor(R.color.lime_dark));
+            cardMain.setCardBackgroundColor(getResources().getColor(R.color.lime));
+            cardBot.setCardBackgroundColor(getResources().getColor(R.color.green));
+            DrawableCompat.setTint(statsResetButton.getDrawable(), ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtCoin.getCompoundDrawables()[2], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtLanguage.getCompoundDrawables()[2], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtCustomize.getCompoundDrawables()[0], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            txtHeadsTitle.setTextColor(getResources().getColor(R.color.white));
+            txtTailsTitle.setTextColor(getResources().getColor(R.color.white));
+            headsStatText.setTextColor(getResources().getColor(R.color.white));
+            tailsStatText.setTextColor(getResources().getColor(R.color.white));
+            resultText.setTextColor(getResources().getColor(R.color.white));
+            txtCoin.setTextColor(getResources().getColor(R.color.white));
+            txtLanguage.setTextColor(getResources().getColor(R.color.white));
+            txtCustomize.setTextColor(getResources().getColor(R.color.white));
+
+        }else if(themeId==2){
+            relMain.setBackgroundColor(getResources().getColor(R.color.myBlue_dark));
+            cardMain.setCardBackgroundColor(getResources().getColor(R.color.myBlue));
+            cardBot.setCardBackgroundColor(getResources().getColor(R.color.myBlue_light));
+            DrawableCompat.setTint(statsResetButton.getDrawable(), ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtCoin.getCompoundDrawables()[2], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtLanguage.getCompoundDrawables()[2], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtCustomize.getCompoundDrawables()[0], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            txtHeadsTitle.setTextColor(getResources().getColor(R.color.white));
+            txtTailsTitle.setTextColor(getResources().getColor(R.color.white));
+            headsStatText.setTextColor(getResources().getColor(R.color.white));
+            tailsStatText.setTextColor(getResources().getColor(R.color.white));
+            resultText.setTextColor(getResources().getColor(R.color.white));
+            txtCoin.setTextColor(getResources().getColor(R.color.white));
+            txtLanguage.setTextColor(getResources().getColor(R.color.white));
+            txtCustomize.setTextColor(getResources().getColor(R.color.white));
+        }else if(themeId==3){
+            relMain.setBackgroundColor(getResources().getColor(R.color.red_dark));
+            cardMain.setCardBackgroundColor(getResources().getColor(R.color.red));
+            cardBot.setCardBackgroundColor(getResources().getColor(R.color.red_light));
+            DrawableCompat.setTint(statsResetButton.getDrawable(), ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtCoin.getCompoundDrawables()[2], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtLanguage.getCompoundDrawables()[2], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtCustomize.getCompoundDrawables()[0], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            txtHeadsTitle.setTextColor(getResources().getColor(R.color.white));
+            txtTailsTitle.setTextColor(getResources().getColor(R.color.white));
+            headsStatText.setTextColor(getResources().getColor(R.color.white));
+            tailsStatText.setTextColor(getResources().getColor(R.color.white));
+            resultText.setTextColor(getResources().getColor(R.color.white));
+            txtCoin.setTextColor(getResources().getColor(R.color.white));
+            txtLanguage.setTextColor(getResources().getColor(R.color.white));
+            txtCustomize.setTextColor(getResources().getColor(R.color.white));
+        }else if(themeId==4){
+            relMain.setBackgroundColor(getResources().getColor(R.color.black_dark));
+            cardMain.setCardBackgroundColor(getResources().getColor(R.color.black));
+            cardBot.setCardBackgroundColor(getResources().getColor(R.color.black_light));
+            DrawableCompat.setTint(statsResetButton.getDrawable(), ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtCoin.getCompoundDrawables()[2], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtLanguage.getCompoundDrawables()[2], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtCustomize.getCompoundDrawables()[0], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            txtHeadsTitle.setTextColor(getResources().getColor(R.color.white));
+            txtTailsTitle.setTextColor(getResources().getColor(R.color.white));
+            headsStatText.setTextColor(getResources().getColor(R.color.white));
+            tailsStatText.setTextColor(getResources().getColor(R.color.white));
+            resultText.setTextColor(getResources().getColor(R.color.white));
+            txtCoin.setTextColor(getResources().getColor(R.color.white));
+            txtLanguage.setTextColor(getResources().getColor(R.color.white));
+            txtCustomize.setTextColor(getResources().getColor(R.color.white));
+        }else if(themeId==5){
+            relMain.setBackgroundColor(getResources().getColor(R.color.golden_dark));
+            cardMain.setCardBackgroundColor(getResources().getColor(R.color.golden));
+            cardBot.setCardBackgroundColor(getResources().getColor(R.color.golden2));
+            DrawableCompat.setTint(statsResetButton.getDrawable(), ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtCoin.getCompoundDrawables()[2], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtLanguage.getCompoundDrawables()[2], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            DrawableCompat.setTint(txtCustomize.getCompoundDrawables()[0], ContextCompat.getColor(getApplicationContext(), R.color.white));
+            txtHeadsTitle.setTextColor(getResources().getColor(R.color.white));
+            txtTailsTitle.setTextColor(getResources().getColor(R.color.white));
+            headsStatText.setTextColor(getResources().getColor(R.color.white));
+            tailsStatText.setTextColor(getResources().getColor(R.color.white));
+            resultText.setTextColor(getResources().getColor(R.color.white));
+            txtCoin.setTextColor(getResources().getColor(R.color.white));
+            txtLanguage.setTextColor(getResources().getColor(R.color.white));
+            txtCustomize.setTextColor(getResources().getColor(R.color.white));
+        }else{
+            DrawableCompat.setTint(statsResetButton.getDrawable(), ContextCompat.getColor(getApplicationContext(), R.color.gray));
+            DrawableCompat.setTint(txtCoin.getCompoundDrawables()[2], ContextCompat.getColor(getApplicationContext(), R.color.gray));
+            DrawableCompat.setTint(txtLanguage.getCompoundDrawables()[2], ContextCompat.getColor(getApplicationContext(), R.color.gray));
+            DrawableCompat.setTint(txtCustomize.getCompoundDrawables()[0], ContextCompat.getColor(getApplicationContext(), R.color.gray));
+            txtHeadsTitle.setTextColor(getResources().getColor(R.color.gray));
+            txtTailsTitle.setTextColor(getResources().getColor(R.color.gray));
+            headsStatText.setTextColor(getResources().getColor(R.color.gray));
+            tailsStatText.setTextColor(getResources().getColor(R.color.gray));
+            resultText.setTextColor(getResources().getColor(R.color.gray));
+            txtCoin.setTextColor(getResources().getColor(R.color.gray));
+            txtLanguage.setTextColor(getResources().getColor(R.color.gray));
+            txtCustomize.setTextColor(getResources().getColor(R.color.gray));
+        }
     }
 
     private void pauseListeners() {
