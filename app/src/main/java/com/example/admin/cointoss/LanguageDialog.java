@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -17,6 +18,10 @@ public class LanguageDialog extends Dialog {
     public Activity c;
     public Dialog d;
     public RelativeLayout relFarsi,relEng,relSpanish,relFrench,relGerman;
+    //For Theme
+    public CardView cardLanguage;
+    public View view1,view2,view3,view4;
+    public MyTextView txtFarsi,txtEnglish,txtSpanish,txtGerman,txtFrench;
     SharedPrefManager sharedPrefManager;
     public LanguageDialog(Activity a) {
         super(a);
@@ -35,6 +40,20 @@ public class LanguageDialog extends Dialog {
         relSpanish = findViewById(R.id.relSpain);
         relFrench = findViewById(R.id.relFrench);
         relGerman = findViewById(R.id.relGerman);
+        //For Theme
+        cardLanguage = findViewById(R.id.cardLanguage);
+        view1 = findViewById(R.id.view1);
+        view2 = findViewById(R.id.view2);
+        view3 = findViewById(R.id.view3);
+        view4 = findViewById(R.id.view4);
+        txtFarsi = findViewById(R.id.txtFarsi);
+        txtEnglish = findViewById(R.id.txtEnglish);
+        txtSpanish = findViewById(R.id.txtSpanish);
+        txtGerman = findViewById(R.id.txtGerman);
+        txtFrench = findViewById(R.id.txtFrench);
+
+        setThemeById(sharedPrefManager.getTheme());
+
         relFarsi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -106,6 +125,67 @@ public class LanguageDialog extends Dialog {
             }
         });
 
+    }
+
+    private void setThemeById(int themeId) {
+        if (themeId==1){
+            cardLanguage.setCardBackgroundColor(c.getResources().getColor(R.color.lime));
+            view1.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view2.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view3.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view4.setBackgroundColor(c.getResources().getColor(R.color.white));
+            txtFarsi.setTextColor(c.getResources().getColor(R.color.white));
+            txtEnglish.setTextColor(c.getResources().getColor(R.color.white));
+            txtSpanish.setTextColor(c.getResources().getColor(R.color.white));
+            txtGerman.setTextColor(c.getResources().getColor(R.color.white));
+            txtFrench.setTextColor(c.getResources().getColor(R.color.white));
+        }else if (themeId==2){
+            cardLanguage.setCardBackgroundColor(c.getResources().getColor(R.color.myBlue));
+            view1.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view2.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view3.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view4.setBackgroundColor(c.getResources().getColor(R.color.white));
+            txtFarsi.setTextColor(c.getResources().getColor(R.color.white));
+            txtEnglish.setTextColor(c.getResources().getColor(R.color.white));
+            txtSpanish.setTextColor(c.getResources().getColor(R.color.white));
+            txtGerman.setTextColor(c.getResources().getColor(R.color.white));
+            txtFrench.setTextColor(c.getResources().getColor(R.color.white));
+        }else if (themeId==3){
+            cardLanguage.setCardBackgroundColor(c.getResources().getColor(R.color.red));
+            view1.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view2.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view3.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view4.setBackgroundColor(c.getResources().getColor(R.color.white));
+            txtFarsi.setTextColor(c.getResources().getColor(R.color.white));
+            txtEnglish.setTextColor(c.getResources().getColor(R.color.white));
+            txtSpanish.setTextColor(c.getResources().getColor(R.color.white));
+            txtGerman.setTextColor(c.getResources().getColor(R.color.white));
+            txtFrench.setTextColor(c.getResources().getColor(R.color.white));
+        }else if (themeId==4){
+            cardLanguage.setCardBackgroundColor(c.getResources().getColor(R.color.black));
+            view1.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view2.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view3.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view4.setBackgroundColor(c.getResources().getColor(R.color.white));
+            txtFarsi.setTextColor(c.getResources().getColor(R.color.white));
+            txtEnglish.setTextColor(c.getResources().getColor(R.color.white));
+            txtSpanish.setTextColor(c.getResources().getColor(R.color.white));
+            txtGerman.setTextColor(c.getResources().getColor(R.color.white));
+            txtFrench.setTextColor(c.getResources().getColor(R.color.white));
+        }else if (themeId==5){
+            cardLanguage.setCardBackgroundColor(c.getResources().getColor(R.color.golden));
+            view1.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view2.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view3.setBackgroundColor(c.getResources().getColor(R.color.white));
+            view4.setBackgroundColor(c.getResources().getColor(R.color.white));
+            txtFarsi.setTextColor(c.getResources().getColor(R.color.white));
+            txtEnglish.setTextColor(c.getResources().getColor(R.color.white));
+            txtSpanish.setTextColor(c.getResources().getColor(R.color.white));
+            txtGerman.setTextColor(c.getResources().getColor(R.color.white));
+            txtFrench.setTextColor(c.getResources().getColor(R.color.white));
+        }else{
+
+        }
     }
 
 
