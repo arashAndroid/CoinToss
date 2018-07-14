@@ -41,6 +41,8 @@ import java.io.ByteArrayOutputStream;
 import java.util.EnumMap;
 import java.util.Locale;
 
+import ir.adad.client.Adad;
+
 public class MainActivity extends AppCompatActivity {
 
     // debugging tag
@@ -151,8 +153,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate()");
 
         super.onCreate(savedInstanceState);
-
-
+        Adad.initialize(getApplicationContext());
         setContentView(R.layout.activity_main);
         sharedPrefManager = new SharedPrefManager(getApplicationContext());
         if (sharedPrefManager.isFirstRun()){
@@ -161,7 +162,11 @@ public class MainActivity extends AppCompatActivity {
             languageDialog.show();
             sharedPrefManager.setFirstRun();
         }
-
+        if (sharedPrefManager.hasPremium()){
+            Adad.disableBannerAds();
+        }else{
+            //Adad.enableBannerAds();
+        }
         initViews();
 
         setThemeById(sharedPrefManager.getTheme());

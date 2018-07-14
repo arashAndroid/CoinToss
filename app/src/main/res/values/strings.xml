@@ -8,7 +8,7 @@
         \n\n\n\n Copyright © 2018 - Arash Mohammadi
         \n Email: arash13131313@gmail.com
     </string>
-    <string name="app_name">Coin Flip</string>
+    <string name="app_name">Heads or Tails</string>
     <string name="coin_animation">Coin Animation</string>
     <string name="exit">Exit</string>
     <string name="instructions_tap_shake_tv">Tap/Shake to Flip Coin</string>
@@ -30,7 +30,7 @@
     <string name="laguage">English</string>
     <string name="coin">Coins</string>
     <string name="buyButton">Buy (1900 Tomans)</string>
-    <string name="buyExplain">By buying this package, you will unlock all themes and coins. And you will support us :)!</string>
+    <string name="buyExplain">By buying this package, you will unlock all themes and coins and remove the ads. And you will support us :)!</string>
     <string name="buyUnlocksCoin">Coin Unlocks:</string>
     <string name="buyUnlocksTheme">Theme Unlocks:</string>
     <string name="tapToBuy">Tap to buy (Only in Iran)</string>
