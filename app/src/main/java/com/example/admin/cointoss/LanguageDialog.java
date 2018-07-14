@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
@@ -57,71 +58,83 @@ public class LanguageDialog extends Dialog {
         relFarsi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sharedPrefManager.setLanguage("fa");
-                Resources resources = c.getResources();
-                Locale locale = new Locale("fa");
-                Configuration configuration = resources.getConfiguration();
-                configuration.setLocale(locale);
-                c.getBaseContext().getResources().updateConfiguration(configuration,
-                        c.getBaseContext().getResources().getDisplayMetrics());
-                dismiss();
-                c.recreate();
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                    sharedPrefManager.setLanguage("fa");
+                    Resources resources = c.getResources();
+                    Locale locale = new Locale("fa");
+                    Configuration configuration = resources.getConfiguration();
+                    configuration.setLocale(locale);
+                    c.getBaseContext().getResources().updateConfiguration(configuration,
+                            c.getBaseContext().getResources().getDisplayMetrics());
+                    dismiss();
+                    c.recreate();
+                }
             }
         });
         relEng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sharedPrefManager.setLanguage("en");
-                Resources resources = c.getResources();
-                Locale locale = new Locale("en");
-                Configuration configuration = resources.getConfiguration();
-                configuration.setLocale(locale);
-                c.getBaseContext().getResources().updateConfiguration(configuration,
-                        c.getBaseContext().getResources().getDisplayMetrics());
-                dismiss();
-                c.recreate();
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                    sharedPrefManager.setLanguage("en");
+                    Resources resources = c.getResources();
+                    Locale locale = new Locale("en");
+                    Configuration configuration = resources.getConfiguration();
+
+                    configuration.setLocale(locale);
+
+                    c.getBaseContext().getResources().updateConfiguration(configuration,
+                            c.getBaseContext().getResources().getDisplayMetrics());
+                    dismiss();
+                    c.recreate();
+                }
             }
         });
         relSpanish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sharedPrefManager.setLanguage("es");
-                Resources resources = c.getResources();
-                Locale locale = new Locale("es");
-                Configuration configuration = resources.getConfiguration();
-                configuration.setLocale(locale);
-                c.getBaseContext().getResources().updateConfiguration(configuration,
-                        c.getBaseContext().getResources().getDisplayMetrics());
-                dismiss();
-                c.recreate();
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                    sharedPrefManager.setLanguage("es");
+                    Resources resources = c.getResources();
+                    Locale locale = new Locale("es");
+                    Configuration configuration = resources.getConfiguration();
+                    configuration.setLocale(locale);
+                    c.getBaseContext().getResources().updateConfiguration(configuration,
+                            c.getBaseContext().getResources().getDisplayMetrics());
+                    dismiss();
+                    c.recreate();
+                }
             }
         });
         relGerman.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sharedPrefManager.setLanguage("de");
-                Resources resources = c.getResources();
-                Locale locale = new Locale("de");
-                Configuration configuration = resources.getConfiguration();
-                configuration.setLocale(locale);
-                c.getBaseContext().getResources().updateConfiguration(configuration,
-                        c.getBaseContext().getResources().getDisplayMetrics());
-                dismiss();
-                c.recreate();
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                    sharedPrefManager.setLanguage("de");
+                    Resources resources = c.getResources();
+                    Locale locale = new Locale("de");
+                    Configuration configuration = resources.getConfiguration();
+                    configuration.setLocale(locale);
+                    c.getBaseContext().getResources().updateConfiguration(configuration,
+                            c.getBaseContext().getResources().getDisplayMetrics());
+                    dismiss();
+                    c.recreate();
+                }
             }
         });
         relFrench.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sharedPrefManager.setLanguage("fr");
-                Resources resources = c.getResources();
-                Locale locale = new Locale("fr");
-                Configuration configuration = resources.getConfiguration();
-                configuration.setLocale(locale);
-                c.getBaseContext().getResources().updateConfiguration(configuration,
-                        c.getBaseContext().getResources().getDisplayMetrics());
-                dismiss();
-                c.recreate();
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                    sharedPrefManager.setLanguage("fr");
+                    Resources resources = c.getResources();
+                    Locale locale = new Locale("fr");
+                    Configuration configuration = resources.getConfiguration();
+                    configuration.setLocale(locale);
+                    c.getBaseContext().getResources().updateConfiguration(configuration,
+                            c.getBaseContext().getResources().getDisplayMetrics());
+                    dismiss();
+                    c.recreate();
+                }
             }
         });
 

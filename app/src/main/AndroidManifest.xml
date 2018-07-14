@@ -32,9 +32,7 @@
         <meta-data
             android:name="AdadToken"
             android:value="40656696cdcd4ad4a899866c6eee81ae" />
-        <meta-data
-            android:name="AdadTestMode"
-            android:value="true"/>
+
     </application>
 
 </manifest>

@@ -248,16 +248,6 @@ public class MainActivity extends AppCompatActivity {
         coinImage.setImageDrawable(getResources().getDrawable(R.drawable.f100));
     }
 
-    public void setLocaleLang(String localeKey){
-        Resources resources = getResources();
-        locale = new Locale(localeKey);
-        Configuration configuration = resources.getConfiguration();
-        configuration.setLocale(locale);
-        getBaseContext().getResources().updateConfiguration(configuration,
-                getBaseContext().getResources().getDisplayMetrics());
-        recreate();
-    }
-
     private void flipCoin() {
         Log.d(TAG, "flipCoin()");
 
